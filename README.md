@@ -1,0 +1,2 @@
+# Kythonaclient
+コンソール上で動作するPythonで書かれたKanaAPIの非公式クライアント
