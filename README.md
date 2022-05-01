@@ -1,3 +1,4 @@
+![Test Image 1](https://github.com/Budobudou/Kythonaclient/blob/main/Kythona256.png?raw=true)
 # KythonaClient
 コンソール上で動作するPythonで書かれたKanaAPIの非公式クライアント
 
