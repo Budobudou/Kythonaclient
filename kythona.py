@@ -2,9 +2,7 @@
 # Kythonaの読み方は「かいそな」です。
 # Kythona Loader#
 import requests, json, getpass, io ,sys , time,re
-from pathlib import Path
-homed = str(Path.home())
-savedir = "~/kythonaSE.txt"
+savedir = "kythonaSE.txt"
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 print("KythonaClient Version 1.2")
 apiurl = "https://kana.renorari.net/api/api.json"
