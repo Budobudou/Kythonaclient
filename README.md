@@ -2,7 +2,7 @@
 # KythonaClient
 コンソール上で動作するPythonで書かれたKanaAPIの非公式クライアント
 ## 使用パッケージ
-requests
+requests  
 readline(Linuxのみ)
 ## 使い方
 1.Python3と、上記パッケージがインストールされた環境で、実行します。  
