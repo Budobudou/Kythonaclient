@@ -1,12 +1,19 @@
 #!/usr/bin/env python3
 # Kythonaの読み方は「かいそな」です。
 # Kythona Loader#
-import requests,json,getpass,io,sys,time,re,os,readline
+import requests,json,getpass,io,sys,time,re,os
+if os.name == "nt":
+	pass
+elif os.name == "posix":
+	import readline
 homedir = os.path.expanduser("~")
 os.chdir(homedir)
 savedir = f"{homedir}//.kythonaSE.txt"
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
-print("\033[36m"+"* KythonaClient"+"\033[0m"+" Version 2.0")
+if os.name == "nt":
+	print("* KythonaClient Version 2.0")
+elif os.name == "posix":
+	print("\033[36m"+"* KythonaClient"+"\033[0m"+" Version 2.0")
 apiurl = "https://kana.renorari.net/api/api.json"
 try:
 	file = open(savedir, "r")
@@ -47,10 +54,14 @@ print("コマンド一覧は/helpと入力してください。")
 while True:
 	rawmsg = input("Kythona> ")
 	if rawmsg == "/help":
-		print("・/help 今実行したコマンドだよ。\n・/exit KythonaClientを終了するよ。\n・/json 直前のメッセージの詳細を表示するよ。")
+		print("・/help 今実行したコマンドだよ。\n・/exit KythonaClientを終了するよ。\n・/json 直前のメッセージの詳細を表示するよ。\n・/logout 設定を削除してログアウトするよ。")
 	elif rawmsg == "/exit":
 		sys.exit()
 		print("何もしていないのに終了できなかった、ごめん^^")
+	elif rawmsg == "/logout":
+		os.remove(savedir)
+		print("設定を削除してログアウトしました。終了します。")
+		sys.exit()
 	elif rawmsg.startswith("/cdict "):
 		kdict = rawmsg[7:]
 		print(f"辞書を{kdict}に変更しました。")
