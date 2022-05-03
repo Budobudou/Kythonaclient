@@ -11,9 +11,9 @@ os.chdir(homedir)
 savedir = f"{homedir}//.kythonaSE.txt"
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 if os.name == "nt":
-	print("* KythonaClient Version 2.0")
+	print("* KythonaClient Version 2.1")
 elif os.name == "posix":
-	print("\033[36m"+"* KythonaClient"+"\033[0m"+" Version 2.0")
+	print("\033[36m"+"* KythonaClient"+"\033[0m"+" Version 2.1")
 apiurl = "https://kana.renorari.net/api/api.json"
 try:
 	file = open(savedir, "r")
