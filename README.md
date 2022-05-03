@@ -5,8 +5,11 @@
 requests  
 readline(Linuxのみ)
 ## 使い方
-1.Python3と、上記パッケージがインストールされた環境で、実行します。  
-2.KanaAPIのIDとパスワードを使ってログイン  
+1.Python3と、上記パッケージがインストールされた環境で、実行します。
+```
+$ ./kythona.py
+```
+2.[こちら](https://kana.renorari.net/api/)で作成したKanaAPIのIDとパスワードを使ってログイン  
 ※間違ってるとエラーが出ます。  
 3.楽しもう！   
 ## アップデート
