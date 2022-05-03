@@ -1,8 +1,6 @@
 ![Test Image 1](https://github.com/Budobudou/Kythonaclient/blob/main/Kythona256.png?raw=true)
 # KythonaClient
 コンソール上で動作するPythonで書かれたKanaAPIのクライアント
-## KythonaのDiscordに参加しよう！
-https://discord.gg/nTpQdpCMc9
 ## 使用パッケージ
 requests  
 readline(Linuxのみ)
@@ -14,6 +12,8 @@ $ ./kythona.py
 2.[こちら](https://kana.renorari.net/api/)で作成したKanaAPIのIDとパスワードを使ってログイン  
 ※間違ってるとエラーが出ます。  
 3.楽しもう！   
+## KythonaのDiscordに参加しよう！
+https://discord.gg/nTpQdpCMc9
 ## アップデート
 ### Version 2.1
 ・windows対応になりました！  
