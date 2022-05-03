@@ -1,6 +1,8 @@
 ![Test Image 1](https://github.com/Budobudou/Kythonaclient/blob/main/Kythona256.png?raw=true)
 # KythonaClient
 コンソール上で動作するPythonで書かれたKanaAPIのクライアント
+## KythonaのDiscordに参加しよう！
+https://discord.gg/nTpQdpCMc9
 ## 使用パッケージ
 requests  
 readline(Linuxのみ)
