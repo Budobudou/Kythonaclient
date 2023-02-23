@@ -12,9 +12,11 @@ $ ./kythona.py
 2.[こちら](https://kana.renorari.net/api/)で作成したKanaAPIのIDとパスワードを使ってログイン  
 ※間違ってるとエラーが出ます。  
 3.楽しもう！   
-## KythonaのDiscordに参加しよう！
-https://discord.gg/nTpQdpCMc9
 ## アップデート
+### Version 3
+・KanaAPI v2 に初対応
+・KanaAPI 送信部分を関数化
+・アカウント情報表示機能の追加
 ### Version 2.1
 ・windows対応になりました！  
 ・設定ファイルを削除してログアウトする/logoutコマンドを追加！
